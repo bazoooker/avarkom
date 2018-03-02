@@ -1,0 +1,21 @@
+@mixin section-padding {
+	padding: 40px 0 40px 0;
+}
+
+@mixin theme-gradient {
+    background: #005179;
+	background: -webkit-linear-gradient(#239cd8 0%, #005179 100%);
+	background: -o-linear-gradient(#239cd8 0%, #005179 100%);
+	background: linear-gradient(#239cd8 0%, #005179 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#239cd8', endColorstr='#005179',GradientType=0 );
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+@mixin theme-gradient-horizontal {
+    background: #005179;
+	background: -webkit-linear-gradient(to left, #70befe 0%, #005179 100%);
+	background: -o-linear-gradient(to left, #70befe 0%, #005179 100%);
+	background: linear-gradient(to left, #70befe 0%, #005179 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#239cd8', endColorstr='#005179',GradientType=0 );
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}

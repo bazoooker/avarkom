@@ -1,0 +1,31 @@
+.action-btn {
+	background-color: $main-color;
+	display: block; 
+	border: none !important;
+	text-transform: uppercase;
+	transition: all 400ms ease;
+}
+	// состояния
+	.action-btn_big {
+		padding: 9px 25px; 
+		border-radius: 26px;
+		font-size: 21px;
+
+
+	}
+	.action-btn_small {
+		padding: 6px 17px;
+		border-radius: 17px;
+		font-size: 14px;
+	}
+
+	// эффекты
+	.action-btn:hover {
+		box-shadow: 0 0 0 5px #239cd8;
+    	color: #fff;
+	}
+
+.test {
+	transition: 400ms;
+	display: flex;
+}
