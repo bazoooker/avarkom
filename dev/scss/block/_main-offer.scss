@@ -1,0 +1,20 @@
+.main-offer {
+	flex: 0 1 50%;
+	background-color: rgba(0,0,0,.5);
+	padding: 55px 70px;
+
+	color: #fff;
+
+	z-index: 2; //in front of hero:before overlay
+
+		h1 {
+			margin: 0 0 20px 0;
+		}
+
+		p {
+			font-size: 30px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin: 0 0 55px 0;
+		}
+}

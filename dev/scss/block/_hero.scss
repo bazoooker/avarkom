@@ -1,0 +1,49 @@
+// block
+.hero {	
+	position: relative;
+
+	display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+		.container {			
+			position: relative;
+		
+			display: flex;
+			flex-flow: row nowrap;
+
+			justify-content: flex-start;
+			align-items: center;			
+
+			height: 100%;
+		}
+
+		&:before {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: 1;
+
+			background-color: rgba(0,0,0,.25);
+			content: '';
+		}
+
+		
+
+
+}
+
+			// elements
+
+			// modificators
+			.hero_top {
+				min-height: 677px;
+				background-image: url(../img/bg/bg-hero-min.jpg);				
+			}
+			.hero_bottom {}

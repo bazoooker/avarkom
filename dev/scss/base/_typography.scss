@@ -19,7 +19,7 @@
   	url("/fonts/DINPro/DINPro-Bold.eot?#iefix") format("embedded-opentype"), 
   	url("/fonts/DINPro/DINPro-Bold.woff") format("woff"), 
   	url("/fonts/DINPro/DINPro-Bold.ttf") format("truetype");
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
@@ -29,7 +29,7 @@
   	url("/fonts/DINPro/DINPro-BoldItalic.eot?#iefix") format("embedded-opentype"), 
   	url("/fonts/DINPro/DINPro-BoldItalic.woff") format("woff"), 
   	url("/fonts/DINPro/DINPro-BoldItalic.ttf") format("truetype");
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic; }
 
   @font-face {
@@ -62,20 +62,24 @@ body {
   color: #242323;
 }
 
-h1 {color: #fb3231;}
+h1 {color: #fb3231; }
 h2 {color: $color_font;}
 h3 {color: $color_font;}
 h4 {color: $color_font;}
 h5 {color: $color_font;}
 h6 {color: $color_font;}
 
-h1,h2,h3,h4,h5,h6,p,a {
+h1,h2,h3,h4,h5,h6,p,a,ul {
 	font-family: 'DIN-Pro', sans-serif;
 }
 
-h1 {font-weight: 900}
+h1 {
+  font-size: 38px;
+  text-transform: uppercase; 
+  font-weight: 700;
+}
 
-h2,h3,h4,h5,h6 {font-weight: 600}
+h2,h3,h4,h5,h6 {font-weight:400}
 
 p {}
 

@@ -1,0 +1,65 @@
+// block
+.header {
+	border-top: 20px solid $color_main;
+
+	min-height: 170px;
+
+	.container {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.logo {
+		flex: 1 1 20%;
+		margin-left: 70px;
+		img {
+			margin-top:-20px;
+		}
+	}
+}
+			// elements
+			.header__offer {
+				flex: 1 1 40%;
+
+				.company {
+					margin-top: 40px;
+
+					font-size: 24px;
+					text-transform: uppercase;
+					font-weight: 900;
+					color: $color_font-dark;
+				}
+				.advantages {
+					color: #7b7b7b;
+					font-size: 18px;
+					font-weight: 400;
+				}
+			}
+			.header__phones {
+				flex: 1 1 40%;
+				padding-left: 70px;
+
+				ul {
+					list-style: none;
+					font-size: 30px;
+					font-weight: 600;
+
+					li:first-child {
+						position: relative;
+						font-weight: 900;			
+						&:before {
+							position: absolute;				
+							top: 7px;
+							left: -70px;
+
+							color: #7b7b7b;
+							font-size: 18px;
+							font-weight: 400;
+
+							content: '+7 3852';
+							
+
+						}
+					}
+				}
+			}
