@@ -1,0 +1,46 @@
+.card {
+	flex: 1 1 45%;
+
+	.checklist {
+		li {font-size: 17px; font-weight: 700;}		
+	}
+}
+
+.card__image {
+	min-height: 230px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.card__info {
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.card__price {
+	
+	span:nth-child(1) {
+		font-style: italic;
+		font-weight: 200;
+	}
+	span:nth-child(2) {
+		font-weight: 700;
+	}
+}
+
+.card__double-checklist {
+	display: flex;
+	flex-direction: row wrap;
+	align-items: flex-start;
+
+	.checklist {
+		flex: 1 1 40%;
+
+		li {font-size: 16px;}
+		
+		&:nth-child(1) {
+			margin-right: 20px;
+		}
+	}
+}

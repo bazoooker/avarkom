@@ -1,0 +1,57 @@
+// block
+.btn {
+	display: inline-block;
+
+	
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+}
+
+// elements
+
+
+		// modificators
+		.btn_gradient {
+			@include btn-gradient;
+			transition: all 300ms;
+
+			&:hover {
+				color: $color_main;
+				background-color: #fff;
+				background-image: none;
+				cursor: pointer;
+				box-shadow: 0 2px 18px rgba(0,0,0,.3);
+			}
+		}
+		.btn_gradient-dark {
+			@include btn-gradient-dark;
+			transition: all 300ms;
+
+			&:hover {
+				color: $color_main;
+				background-color: #fff;
+				background-image: none;
+				cursor: pointer;
+				box-shadow: 0 4px 18px rgba(0,0,0,.3);
+			}
+		}
+
+		.btn_big {
+			padding: 18px 39px;
+			font-size: 24px;
+		}
+		.btn_small {
+			padding: 18px 18px;
+			font-size: 20px;
+		}
+
+		.btn_x-small {
+			padding: 9px 18px;
+			font-size: 14px;
+		}
+
+		.btn_submit {
+			padding: 9px 18px;
+			font-size: 14px;
+		}

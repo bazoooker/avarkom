@@ -1,0 +1,18 @@
+
+// block
+.offer-buttons {
+	background-image: url(/img/bg/bg-paper.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 311px;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	.container {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+}

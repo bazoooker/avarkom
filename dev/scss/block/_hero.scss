@@ -6,9 +6,7 @@
     flex-flow: row nowrap;
     align-items: center;
 
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	
 
 		.container {			
 			position: relative;
@@ -45,5 +43,16 @@
 			.hero_top {
 				min-height: 677px;
 				background-image: url(../img/bg/bg-hero-min.jpg);				
+				background-attachment: fixed;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
 			}
-			.hero_bottom {}
+			.hero_bottom {
+				min-height: 550px;
+				background-image: url(../img/bg/bg-form-section-min.jpg);
+				background-attachment: fixed;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+			}

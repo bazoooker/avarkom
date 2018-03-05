@@ -1,0 +1,28 @@
+// block
+.small-photos {
+	display: flex;
+	flex-direction: row wrap;
+
+	margin-bottom: 46px;	
+}
+
+// elements
+.small-photos__photo {
+	min-height: 200px;
+	height: 100%;
+}
+
+// modificators
+.small-photos__photo_big {
+	flex: 1 1 55%;
+	background-image: url(/img/who-is1-min.jpg );
+	background-size: cover;
+	background-position: 50% 50%;
+	margin-right: 10px;
+}
+.small-photos__photo_small {
+	flex: 1 1 35%;
+	background-image: url(/img/who-is2-min.jpg );
+	background-size: cover;
+	background-position: 50% 50%;
+}

@@ -1,0 +1,14 @@
+// block
+.help {}
+
+
+		// elements
+		.help__list {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		// modificators
+		

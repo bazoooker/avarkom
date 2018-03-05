@@ -1,5 +1,6 @@
+// block
 .main-offer {
-	flex: 0 1 50%;
+	flex: 0 1 55%;
 	background-color: rgba(0,0,0,.5);
 	padding: 55px 70px;
 
@@ -11,10 +12,33 @@
 			margin: 0 0 20px 0;
 		}
 
-		p {
+		& > p {
 			font-size: 30px;
 			font-weight: 700;
 			text-transform: uppercase;
 			margin: 0 0 55px 0;
+
+				@media screen and (max-width: 768px) {
+			          font-size: 26px;
+			        }
 		}
 }
+
+		// elements
+		.main-offer__action {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+
+			& > p {
+				margin-left: 40px;
+
+				font-size: 18px;
+				font-style: italic;
+				text-transform: none;
+				font-weight: 300;
+			}
+		}
+
+		// modificators

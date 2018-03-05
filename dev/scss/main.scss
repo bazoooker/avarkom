@@ -6,14 +6,39 @@
 @import "base/scale";
 @import "base/typography";
 
+@import "block/_subheading.scss";
+@import "block/_checklist.scss";
+@import "block/_btn.scss";
+@import "block/_description.scss";
 
 @import "block/header";
 @import "block/container";
 
 @import "block/hero";
-@import "block/_main-offer.scss";
+@import "block/main-offer.scss";
 
-@import "block/_checklist.scss";
+@import "block/help.scss";
+@import "block/help-item.scss";
+
+@import "block/offer-buttons.scss";
+@import "block/offer-w-btn.scss";
+
+@import "block/_fears-solutions.scss";
+// @import "block/fear.scss";
+@import "block/small-photos.scss";
+@import "block/number-save.scss";
+
+@import "block/feedback.scss";
+@import "block/person.scss";
+
+@import "block/form.scss";
+
+@import "block/cards.scss";
+@import "block/card.scss";
+
+@import "block/swiper.scss";
+
+
 
 
 

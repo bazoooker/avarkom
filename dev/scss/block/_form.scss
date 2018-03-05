@@ -1,0 +1,48 @@
+.form {
+	display: flex;
+	flex-direction: row nowrap;
+
+	height: 175px;
+	width: 80%;
+	margin: 0 auto;
+
+	form {
+		display: flex;
+		flex-direction: row nowrap;
+
+		input {
+			flex: 1 1 55%;
+			margin-right: 10px;
+			font-size: 24px;
+			font-weight: 200;
+			font-style: italic;
+			padding: 0 10px;
+		}
+
+		button {
+			flex: 1 1 40%;
+		}
+	}
+}
+
+.form__logo {
+	width: 260px;
+	height: 100%;
+	
+	background-image: url(/img/logo-no-bg.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	z-index: 2; //in front of overlay
+}
+
+.form__form {
+	flex: 1 1 40%;
+	padding: 0 43px;
+
+	background-color: #fff;
+
+	z-index: 2; //in front of overlay
+
+}

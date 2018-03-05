@@ -1,0 +1,74 @@
+// block
+.fears-solutions {
+	margin-bottom: 70px;
+
+	background-image: url(/img/bg/bg-smoke-min.png );
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+// elements
+.fears-solutions__fears{
+	position: relative;
+	min-height: 520px;
+
+	&:after {
+		position: absolute;
+		width: 50%;
+		height: 414px;
+
+		right: 0;
+		bottom: 0;
+
+		background-image: url(/img/bg/bg-girl-min.png);
+		background-size: contain;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+
+		content: '';
+	}
+
+	&:before {
+		position: absolute;
+		width: 75%;
+		height: 514px;
+
+		left: 0;
+		top: 0;
+
+		z-index: 2;
+
+		background-image: url(/img/problems.png);
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+
+		content: '';
+	}
+}
+.fears-solutions__solutions{
+	display: flex;
+	flex-direction: row wrap;
+
+	padding: 70px;
+	border: 3px solid #aeaeae;
+
+	background-color: #fff;
+
+	.col-6 {
+		flex: 1 1 45%;
+
+		&:first-child {
+			margin-right: 20px;
+		}
+	}
+
+	.checklist li {
+		margin-bottom: 40px;
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+
+//modificators

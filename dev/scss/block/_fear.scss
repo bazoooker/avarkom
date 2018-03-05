@@ -1,0 +1,49 @@
+// block
+.fear {
+	position: absolute;
+	text-align: center;
+}
+
+// elements
+
+
+// modificators
+.fear_type1 {
+	position: relative;
+
+	width: 256px;
+	height: 50px;
+
+	&:before {
+		position: absolute;
+
+		width: 355px;
+		height: 200px;
+		background-image: url(/img/bg/bg-cloud1-min.png);
+		background-size: 330px;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+
+		content: '';
+	}
+}
+.fear_type2 {
+	position: relative;
+
+	width: 256px;
+	height: 50px;
+
+	&:before {
+		position: absolute;
+
+		width: 160%;
+		background-image: url(/img/bg/bg-cloud2-min.png);
+
+		content: '';
+	}
+}
+
+.fear_fear1 {}
+.fear_fear2 {}
+.fear_fear3 {}
+.fear_fear4 {}
