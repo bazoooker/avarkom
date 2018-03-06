@@ -4,6 +4,14 @@
 	padding: 1%;
 	text-align: center;
 
+			@media screen and (max-width: 768px) {
+		        flex: 1 1 27%;
+	        }
+
+	        @media screen and (max-width: 590px) {
+		        flex: 1 1 45%;
+	        }
+
 }
 
 	// elements
@@ -26,6 +34,10 @@
 	.help-item__text {
 		font-size: 18px;
 		font-weight: 700;
+			@media screen and (max-width: 768px) {
+		        font-size: 16px;
+		        font-weight: 400;
+	        }
 	}
 
 	// modificators

@@ -8,7 +8,21 @@
 			color: #fff;
 			text-align: center;
 			padding: 1px 0;
+			
+				span {
+					a {color: #fff; text-decoration: none;}	
+									
+					@media screen and (max-width: 1050px) {
+					  	display: block;
+					}
 
+					@media screen and (max-width: 630px) {
+					  	font-size: 38px !important;
+					}
+					@media screen and (max-width: 460px) {
+					  	font-size: 28px !important;
+					}
+				}
 				span:nth-child(2) {
 					font-weight: 900;
 					font-size: 46px;
@@ -27,5 +41,9 @@
 			p {
 				margin: 20px 0;
 				font-size: 36px;
+
+					@media screen and (max-width: 460px) {
+					  	font-size: 24px;
+					}
 			}
 		}	

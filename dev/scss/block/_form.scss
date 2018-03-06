@@ -1,14 +1,27 @@
 .form {
 	display: flex;
-	flex-direction: row nowrap;
+	flex-flow: row nowrap;
 
-	height: 175px;
+	// height: 175px;
 	width: 80%;
 	margin: 0 auto;
 
+		@media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+
 	form {
 		display: flex;
-		flex-direction: row nowrap;
+		flex-flow: row nowrap;
+
+
+
+			@media screen and (max-width: 550px) {
+	        	flex-flow: row wrap;
+	        	align-items: center;
+	        	justify-content: center;
+	        }
 
 		input {
 			flex: 1 1 55%;
@@ -17,17 +30,28 @@
 			font-weight: 200;
 			font-style: italic;
 			padding: 0 10px;
+			border: none;
+			box-shadow: 0 0px 1px rgba(0,0,0,.6);
+				@media screen and (max-width: 550px) {
+		        	flex: 1 0 50%;
+		        	margin: 0 0 10px 0;
+		        	padding: 15px 20px;
+    				text-align: center;
+		        }
 		}
 
 		button {
 			flex: 1 1 40%;
+				@media screen and (max-width: 550px) {
+		        	flex: 1 0 50%;
+		        }
 		}
 	}
 }
 
 .form__logo {
 	width: 260px;
-	height: 100%;
+	min-height: 100%;
 	
 	background-image: url(/img/logo-no-bg.png);
 	background-size: contain;
@@ -35,14 +59,31 @@
 	background-position: 50% 50%;
 
 	z-index: 2; //in front of overlay
+
+		@media screen and (max-width: 768px) {
+          display: none;
+        }
 }
 
 .form__form {
 	flex: 1 1 40%;
-	padding: 0 43px;
+	padding: 15px 43px;
 
 	background-color: #fff;
 
 	z-index: 2; //in front of overlay
+
+		.subheading {
+			margin: 0 20px;
+			font-size: 22px;
+		}
+
+		@media screen and (max-width: 550px) {
+        	padding: 0 30px 30px 30px;
+        	background-color: rgba(255,255,255,.9);
+        }
+        @media screen and (max-width: 340px) {
+        	padding: 0 15px 15px 15px;
+        }
 
 }

@@ -14,5 +14,8 @@
 	.container {
 		display: flex;
 		flex-flow: row nowrap;
+				@media screen and (max-width: 1012px) {
+			        flex-flow: row wrap;
+		        }
 	}
 }

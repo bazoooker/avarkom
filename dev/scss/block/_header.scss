@@ -32,6 +32,10 @@
 			.header__offer {
 				flex: 1 1 40%;
 
+					@media screen and (max-width: 413px) {
+						flex: 1 1 100%;
+					}
+
 				.company {
 					margin-top: 40px;
 
@@ -59,22 +63,39 @@
 				flex: 1 1 40%;
 				padding-left: 70px;
 
+						@media screen and (max-width: 600px) {
+							padding-left: 50px;
+						}
+						@media screen and (max-width: 413px) {
+							flex: 1 1 100%;
+							padding-left: 0;
+						}
+
 				ul {
 					list-style: none;
 					font-size: 30px;
 					font-weight: 600;
 
-					@media screen and (max-width: 768px) {
-						display: flex;
-						flex-flow: row wrap;
-					}
-					@media screen and (max-width: 600px) {
-						display: flex;
-						flex-flow: column nowrap;
-					}
+						@media screen and (max-width: 768px) {
+							display: flex;
+							flex-flow: row wrap;
+						}
+						@media screen and (max-width: 600px) {
+							display: flex;
+							flex-flow: column nowrap;
+						}
+						@media screen and (max-width: 413px) {
+							padding: 0;
+							text-align: center;
+						}
 
 					li {
 						flex: 1 1 30%;
+
+							a {
+								color: #0e0f0f;
+								text-decoration: none;
+							}
 					}
 
 					li:first-child {
@@ -90,6 +111,10 @@
 							font-weight: 400;
 
 							content: '+7 3852';
+
+								@media screen and (max-width: 413px) {
+									display: none;
+								}
 							
 
 						}

@@ -1,16 +1,24 @@
 // block
 .small-photos {
 	display: flex;
-	flex-direction: row wrap;
+	flex-flow: row wrap;
 
-	margin-bottom: 46px;	
+	margin-bottom: 46px;
+
+		@media screen and (max-width: 550px) {
+			flex-flow: column wrap;
+		}
 }
+
+
 
 // elements
 .small-photos__photo {
 	min-height: 200px;
 	height: 100%;
 }
+
+
 
 // modificators
 .small-photos__photo_big {
@@ -19,10 +27,20 @@
 	background-size: cover;
 	background-position: 50% 50%;
 	margin-right: 10px;
+
+		@media screen and (max-width: 550px) {
+			flex: 1 1 90%;
+			margin: 0 0 10px 0;
+		}
 }
 .small-photos__photo_small {
 	flex: 1 1 35%;
 	background-image: url(/img/who-is2-min.jpg );
 	background-size: cover;
 	background-position: 50% 50%;
+
+		@media screen and (max-width: 550px) {
+			flex: 1 1 90%;
+			margin: 0;
+		}
 }

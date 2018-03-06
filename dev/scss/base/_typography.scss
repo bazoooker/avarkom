@@ -15,7 +15,7 @@
 @font-face {
   font-family: 'DIN-Pro';
   src: url("/fonts/DINPro/DINPro-Bold.eot");
-  src: local("DIN Pro Condensed Bold Italic"), local("DINPro-BoldItalic"), 
+  src: local("DIN Pro Bold"), local("DINPro-Bold"), 
   	url("/fonts/DINPro/DINPro-Bold.eot?#iefix") format("embedded-opentype"), 
   	url("/fonts/DINPro/DINPro-Bold.woff") format("woff"), 
   	url("/fonts/DINPro/DINPro-Bold.ttf") format("truetype");
@@ -25,7 +25,7 @@
 @font-face {
   font-family: 'DIN-Pro';
   src: url("/fonts/DINPro/DINPro-BoldItalic.eot");
-  src: local("DIN Pro Condensed Black"), local("DINPro-BoldItalic"), 
+  src: local("DIN Pro Bold Italic"), local("DINPro-BoldItalic"), 
   	url("/fonts/DINPro/DINPro-BoldItalic.eot?#iefix") format("embedded-opentype"), 
   	url("/fonts/DINPro/DINPro-BoldItalic.woff") format("woff"), 
   	url("/fonts/DINPro/DINPro-BoldItalic.ttf") format("truetype");
@@ -35,7 +35,7 @@
   @font-face {
   font-family: 'DIN-Pro';
   src: url("/fonts/DINPro/DINPro-Medium.eot");
-  src: local("DIN Pro Condensed Black"), local("DINPro-Medium"), 
+  src: local("DIN Pro Medium"), local("DINPro-Medium"), 
   	url("/fonts/DINPro/DINPro-Medium.eot?#iefix") format("embedded-opentype"), 
   	url("/fonts/DINPro/DINPro-Medium.woff") format("woff"), 
   	url("/fonts/DINPro/DINPro-Medium.ttf") format("truetype");
@@ -45,7 +45,7 @@
   @font-face {
   font-family: 'DIN-Pro';
   src: url("/fonts/DINPro/DINPro-MediumItalic.eot");
-  src: local("DIN Pro Condensed Black"), local("DINPro-Medium"), 
+  src: local("DIN Pro Medium Italic"), local("DINPro-Medium"), 
   	url("/fonts/DINPro/DINPro-MediumItalic.eot?#iefix") format("embedded-opentype"), 
   	url("/fonts/DINPro/DINPro-MediumItalic.woff") format("woff"), 
   	url("/fonts/DINPro/DINPro-MediumItalic.ttf") format("truetype");
@@ -55,7 +55,7 @@
   @font-face {
   font-family: 'DIN-Pro';
   src: url("/fonts/DINPro/DINPro-LightItalic.eot");
-  src: local("DIN Pro Condensed Black"), local("DINPro-Medium"), 
+  src: local("DIN Pro Light Italic"), local("DINPro-LightItalic"), 
     url("/fonts/DINPro/DINPro-LightItalic.eot?#iefix") format("embedded-opentype"), 
     url("/fonts/DINPro/DINPro-LightItalic.woff") format("woff"), 
     url("/fonts/DINPro/DINPro-LightItalic.ttf") format("truetype");
@@ -71,7 +71,7 @@
 body {
   color: #242323;
 }
-h1,h2,h3,h4,h5,h6,p,a,ul, input, button {
+h1,h2,h3,h4,h5,h6,p,a,ul, input, button, textarea {
   font-family: 'DIN-Pro', sans-serif;
 }
 
@@ -92,6 +92,7 @@ h2 {
   margin: 55px;
       @media screen and (max-width: 768px) {
           font-size: 26px;
+          margin: 40px 0
         }
 }
 h3 {color: $color_font;}
@@ -105,8 +106,10 @@ h3,h4,h5,h6 {font-weight:400}
 
 p {}
 
-a {}
-a:visited {}
+a {
+  color: $color_main;
+}
+a:visited {color: $color_main-dark;}
 a:active {}
 a:hover {}
 

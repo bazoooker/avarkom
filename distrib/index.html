@@ -23,7 +23,7 @@
             <div class="header">
                 <div class="container">
                     <div class="logo">
-                        <img alt="" src="img/logo.png"/>
+                        <img alt="Аварийный комиссар Барнаул" src="img/logo.png"/>
                     </div>
                     <div class="header__offer">
                         <p class="company">
@@ -39,13 +39,13 @@
                     <div class="header__phones">
                         <ul>
                             <li>
-                                555-600
+                                <a href="tel:+73852555600">555-600</a>
                             </li>
                             <li>
-                                555-015
+                                <a href="tel:+738525556015">555-015</a>
                             </li>
                             <li>
-                                555-380
+                                <a href="tel:+73852555380">555-380</a>
                             </li>
                         </ul>
                     </div>
@@ -55,9 +55,7 @@
 
             <!-- HERO 
 			===================-->
-            <div class="hero hero_top"  data-paroller-factor="-0.1"
-                        data-paroller-type="foreground"
-                        data-paroller-direction="vertical">
+            <div class="hero hero_top">
                 <div class="container">
                     <div class="main-offer">
                         <h1>
@@ -78,7 +76,7 @@
                             </li>
                         </ul>
                         <div class="main-offer__action">
-                            <a class="btn btn_gradient btn_big" href="#">
+                            <a class="btn btn_gradient btn_big callback-link">
                                 Вызвать комиссара
                             </a>
                             <p>
@@ -191,7 +189,7 @@
                         <p class="subheading">
                             НУЖНА КОНСУЛЬТАЦИЯ<br> ПО ТЕЛЕФОНУ?
                         </p>
-                        <a class="btn btn_gradient-dark btn_small" href="#">
+                        <a class="btn btn_gradient-dark btn_small callback-link" href="#">
                             СВЯЗАТЬСЯ С ЭКСПЕРТОМ
                         </a>
                     </div>
@@ -199,7 +197,7 @@
                         <p class="subheading">
                             ПОПАЛИ В ДТП?<br> НУЖНО ПРИЕХАТЬ ПРЯМО СЕЙЧАС?
                         </p>
-                        <a class="btn btn_gradient btn_small" href="#">
+                        <a class="btn btn_gradient btn_small callback-link" href="#">
                             ВЫЗВАТЬ КОМИССАРА
                         </a>
                     </div>
@@ -207,7 +205,7 @@
                         <p class="subheading">
                             НУЖНА КОНСУЛЬТАЦИЯ<br> АВТОЮРИСТА?
                         </p>
-                        <a class="btn btn_gradient-dark btn_small" href="#">
+                        <a class="btn btn_gradient-dark btn_small callback-link" href="#">
                             СВЯЗАТЬСЯ С ЮРИСТОМ
                         </a>
                     </div>
@@ -241,7 +239,7 @@
                                     Работаем 24 часа в сутки без выходных. Позвоните нам в час ночи 1 января и мы приедем.
                                 </li>
                             </ul>
-                            <a class="btn btn_gradient btn_small" href="#">
+                            <a class="btn btn_gradient btn_small callback-link" href="#">
                                 Вызвать комиссара
                             </a>
                         </div>
@@ -271,9 +269,8 @@
                 <div class="number-save__top-stipe">
 	                <div class="container">
 	                    <p>
-	                        <span>
-	                            СОХРАНИТЕ НАШ НОМЕР </span><span> +7 (3852) 555-600
-	                        </span>
+	                        <span> СОХРАНИТЕ НАШ НОМЕР </span>
+	                            <span> <a href="tel:+73852555600"">+7 (3852) 555-600</a></span>
 	                    </p>
 	                </div>
                 </div>
@@ -406,7 +403,7 @@
 	            				<span>Стоимость карты:</span>
 	            				<span>600 рублей.</span>
 	            			</p>
-	            			<a href="#" class="btn btn_gradient btn_x-small">Купить карту</a>
+	            			<a href="#" class="btn btn_gradient btn_x-small callback-link">Купить карту</a>
 	            		</div>
 
 	            		<div class="card">
@@ -430,7 +427,7 @@
 	            				<span>Стоимость карты:</span>
 	            				<span>600 рублей.</span>
 	            			</p>
-	            			<a href="#" class="btn btn_gradient btn_x-small">Купить карту</a>
+	            			<a href="#" class="btn btn_gradient btn_x-small callback-link">Купить карту</a>
 	            		</div>
             		</div>
 
@@ -442,10 +439,48 @@
 
         </div>
 
+		<!-- MODAL WINDOW 
+		======================-->
+		<div id="overlay" style="display: none;"></div>
+      <div id="callback-window" class="modal" style="display: none;"> <a class="modal-close" href="#"></a>
+        <div class="spinner"></div>
+        <div class="modal-content">
+
+
+          <h2>Позвоним в течение 10 минут</h2>
+
+          <div class="">
+          	<form action="" method="post" data-file="callback">
+            <input autofocus type="text" name="name" placeholder="Ваше имя *">
+            <input type="text" name="phone" placeholder="Номер телефона *">
+            <textarea name="text" placeholder="Здесь вы можете оставить комментарий"></textarea>
+
+
+            <div class="modal-controls">
+              <button type="submit" class="btn btn_gradient btn_x-small">Отправить</button>
+            </div>
+
+
+            <div class="modal-errors">
+            </div>
+            <div class="modal-result">
+            </div>
+          </form>
+          </div>
+
+
+        </div>
+        <div class="modal-content-copy"></div>
+      </div>
+
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="/js/modernizr.custom.62035.js"></script>
+
 		<script src="js/swiper.min.js"></script>
 		<script src="js/jquery.mask.min.js"></script>
-		<script src="js/jquery.paroller.min.js"></script>
 		<script src="js/script.js"></script>
 		
     </body>
@@ -454,3 +489,4 @@
 
 
 
+ 

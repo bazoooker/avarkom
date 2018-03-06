@@ -11,8 +11,28 @@
 	min-height: 200px;
 	padding: 30px 20px;
 
+			@media screen and (max-width: 790px) {
+		        flex: 1 1 90%;
+		        min-height: 130px;
+	        }
+
 	.subheading {
-		// margin-bottom: 90px;
+		position: relative;
 		text-align: center;
+
+			@media screen and (max-width: 1012px) {
+		        font-size: 20px;
+	        }
+
+	        @media screen and (max-width: 791px) {
+		        font-size: 17px;
+			    padding: 15px 0;
+			    background-color: #fff;
+			    width: 100%;
+			    margin-bottom: 0;
+			    border-top: 1px solid lightgray;
+			    border-left: 1px solid lightgray;
+			    border-right: 1px solid lightgray;
+	        }        
 	}
 }

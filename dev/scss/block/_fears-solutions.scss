@@ -6,12 +6,22 @@
 	background-size: contain;
 	background-position: top center;
 	background-repeat: no-repeat;
+
+		@media screen and (max-width: 790px) {
+			margin: 70px 0;
+		}
+
+
 }
 
 // elements
 .fears-solutions__fears{
 	position: relative;
 	min-height: 520px;
+
+		@media screen and (max-width: 790px) {
+			display: none;
+		}
 
 	&:after {
 		position: absolute;
@@ -49,19 +59,35 @@
 }
 .fears-solutions__solutions{
 	display: flex;
-	flex-direction: row wrap;
+	flex-flow: row wrap;
 
 	padding: 70px;
 	border: 3px solid #aeaeae;
 
 	background-color: #fff;
 
+		@media screen and (max-width: 790px) {
+				padding: 18px;
+			}
+
 	.col-6 {
 		flex: 1 1 45%;
+
+			@media screen and (max-width: 790px) {
+				flex: 1 1 90%;
+			}
+
+		&:first-child .subheading {
+			@media screen and (max-width: 790px) {
+				margin-top: 0;
+			}
+		}
 
 		&:first-child {
 			margin-right: 20px;
 		}
+
+		
 	}
 
 	.checklist li {
